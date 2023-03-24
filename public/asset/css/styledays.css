@@ -1,0 +1,628 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/photo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgb(0, 0, 0, 0.2);
+  border-bottom: 1px solid #fff;
+  z-index: 100;
+}
+
+header .logo img {
+  display: flex;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  border-radius: 40px;
+  height: 91px;
+  width: 100px;
+  z-index: 900;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  left: 32%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 5rem;
+  padding: 0.2rem 1rem;
+  z-index: 300;
+}
+
+.word span {
+  color: #10cab7;
+  padding-right: 5px;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.5);
+  border-left: 1px solid #fff;
+  width: 20vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+nav ul div {
+  margin: 40% 0;
+}
+nav ul li {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:hover {
+  color: rgb(206, 167, 100);
+  font-size: 2.7rem;
+  transition: 0.7s ease;
+}
+#menu {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 88.5%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#menu span {
+  display: block;
+  width: 33px;
+  height: 5px;
+  background-color: white;
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.5s ease;
+  margin-bottom: 7px;
+}
+
+h1,h2 {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 1rem; */
+  font-size: 2rem;
+  /* font-weight: bold; */
+  color: rgb(206, 167, 100);
+}
+
+
+.is-active {
+  display: none;
+}
+form ul {
+  list-style: none;
+}
+
+input[type="checkbox"] {
+  -webkit-transform: scale(2.5);
+}
+
+input[type="checkbox"]:checked + label {
+  color: #10cab7;
+}
+
+.salah {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 63%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(206, 167, 100);
+}
+#optian1 {
+  display: flex;
+  position: absolute;
+  top: 31%;
+  left: 51%;
+}
+.special1 {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 45%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#optian2 {
+  display: flex;
+  position: absolute;
+  top: 31%;
+  left: 41%;
+}
+.special2 {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#optian3 {
+  display: flex;
+  position: absolute;
+  top: 31%;
+  left: 31%;
+}
+.special3 {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 24.5%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#optian4 {
+  display: flex;
+  position: absolute;
+  top: 31%;
+  left: 21%;
+}
+.special4 {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 14%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#optian5 {
+  display: flex;
+  position: absolute;
+  top: 31%;
+  left: 11%;
+}
+.special5 {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  left: 4%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.m3asy .salah {
+  top: 37.5%;
+  left: 59%;
+}
+
+#syam {
+  display: flex;
+  position: absolute;
+  top: 40.5%;
+  left: 51%;
+}
+.azkar .salah {
+  top: 46%;
+  left: 63%;
+}
+#msaa {
+  display: flex;
+  position: absolute;
+  top: 49%;
+  left: 51%;
+}
+
+.quran .salah {
+  top: 56%;
+  left: 59.5%;
+}
+
+#tdbor {
+  display: flex;
+  position: absolute;
+  top: 59%;
+  left: 51%;
+}
+
+.troih .salah {
+  top: 65%;
+  left: 55%;
+}
+#emam {
+  display: flex;
+  position: absolute;
+  top: 68%;
+  left: 51%;
+}
+
+.do3aa .salah {
+  top: 75%;
+  left: 61%;
+}
+
+#when {
+  display: flex;
+  position: absolute;
+  top: 78%;
+  left: 51%;
+}
+
+.sdaka .salah {
+  top: 84%;
+  left: 62.5%;
+}
+
+#food {
+  display: flex;
+  position: absolute;
+  top: 87%;
+  left: 51%;
+}
+.button-save {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  top: 84%;
+  left: 20%;
+  font-size: 2rem;
+  border-radius: 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #079788;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .word {
+    font-size: 4rem;
+  }
+  nav ul div {
+    margin: 70% 0;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+
+  #menu {
+    top: 35%;
+    left: 88%;
+  }
+}
+@media screen and (max-width: 540px) {
+  header .logo img {
+    top: 9%;
+    left: 3%;
+    height: 70px;
+    width: 80px;
+  }
+  .word {
+    font-size: 2.2rem;
+    left: 26%;
+  }
+
+  #menu {
+    left: 80%;
+  }
+
+  nav ul {
+    width: 33vw;
+  }
+  nav ul div {
+    margin: 60% 0;
+  }
+  nav ul li {
+    padding-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="checkbox"] {
+    -webkit-transform: scale(1.2);
+  }
+  .salah {
+    left: 61%;
+    font-size: 1rem;
+  }
+  #optian1 {
+    top: 28.5%;
+    left: 45.5%;
+  }
+  .special1 {
+    left: 35.5%;
+  }
+  #optian2 {
+    top: 28.5%;
+    left: 29%;
+  }
+  .special2 {
+    left: 19.5%;
+  }
+  #optian3 {
+    top: 28.5%;
+    left: 13%;
+  }
+  .special3 {
+    left: 3%;
+  }
+  #optian4 {
+    top: 32%;
+    left: 39%;
+  }
+  .special4 {
+    top: 31.5%;
+    left: 28%;
+  }
+  #optian5 {
+    top: 32%;
+    left: 19%;
+  }
+  .special5 {
+    top: 31.5%;
+    left: 9%;
+  }
+
+  .special1,
+  .special2,
+  .special3,
+  .special4,
+  .special5 {
+    font-size: 1rem;
+  }
+
+  .m3asy .salah {
+    left: 55%;
+  }
+  #syam {
+    top: 38%;
+    left: 45%;
+  }
+  .azkar .salah {
+    top: 45%;
+    left: 63%;
+  }
+  #msaa {
+    top: 46%;
+    left: 45%;
+  }
+  .quran .salah {
+    top: 53%;
+    left: 57%;
+  }
+  #tdbor {
+    top: 53.5%;
+    left: 44.5%;
+  }
+  .troih .salah {
+    top: 61%;
+    left: 51%;
+  }
+  #emam {
+    top: 61.5%;
+    left: 44.5%;
+  }
+
+  .do3aa .salah {
+    top: 69%;
+    left: 60%;
+  }
+  #when {
+    top: 70%;
+    left: 45%;
+  }
+
+  .sdaka .salah {
+    top: 77%;
+    left: 63%;
+  }
+  #food {
+    top: 78%;
+    left: 45%;
+  }
+  .button-save {
+    width: 85px;
+    height: 35px;
+    font-size: 1.5rem;
+    top: 86%;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 393px) {
+  header .logo img {
+    top: 12%;
+    left: 3%;
+    height: 60px;
+    width: 70px;
+  }
+  h2 {
+    margin-top: -10px;
+  }
+  .word {
+    font-size: 1.7rem;
+  }
+  #menu {
+    left: 80%;
+  }
+  nav ul {
+    width: 32vw;
+  }
+  nav ul div {
+    margin: 90% 0;
+  }
+  nav ul li {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header .logo img {
+    top: 25%;
+    left: 1%;
+    height: 40px;
+    width: 50px;
+  }
+  .word {
+    font-size: 1.5rem;
+    left: 20%;
+  }
+  #menu {
+    left: 78%;
+  }
+  #menu span {
+    width: 25px;
+    height: 3px;
+  }
+  nav ul {
+    width: 37vw;
+  }
+  nav ul div {
+    margin: 70% 0;
+  }
+  nav ul li {
+    padding-top: 20px;
+  }
+  nav ul li a {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  input[type="checkbox"] {
+    -webkit-transform: scale(1);
+  }
+  .salah {
+    left: 61%;
+    font-size: 0.8rem;
+  }
+  #optian1 {
+    top: 28.5%;
+    left: 50%;
+  }
+  .special1 {
+    left: 38%;
+  }
+  #optian2 {
+    top: 28.5%;
+    left: 31%;
+  }
+  .special2 {
+    left: 19.5%;
+  }
+  #optian3 {
+    top: 28.5%;
+    left: 13%;
+  }
+  .special3 {
+    left: 1%;
+  }
+  #optian4 {
+    top: 32%;
+    left: 43%;
+  }
+  .special4 {
+    top: 31.5%;
+    left: 28%;
+  }
+  #optian5 {
+    top: 32%;
+    left: 19%;
+  }
+  .special5 {
+    top: 31.5%;
+    left: 6%;
+  }
+
+  .m3asy .salah {
+    left: 55%;
+  }
+  #syam {
+    top: 38%;
+    left: 50%;
+  }
+  .azkar .salah {
+    top: 45.5%;
+    left: 63%;
+  }
+  #msaa {
+    top: 46%;
+    left: 50%;
+  }
+  .quran .salah {
+    top: 53%;
+    left: 57%;
+  }
+  #tdbor {
+    top: 53.5%;
+    left: 50%;
+  }
+  .troih .salah {
+    top: 61%;
+    left: 57%;
+  }
+  #emam {
+    top: 61.5%;
+    left: 50%;
+  }
+
+  .do3aa .salah {
+    top: 71%;
+    left: 60%;
+  }
+  #when {
+    top: 72%;
+    left: 50%;
+  }
+
+  .sdaka .salah {
+    top: 80%;
+    left: 63%;
+  }
+  #food {
+    top: 80.5%;
+    left: 50%;
+  }
+  .button-save {
+    top: 89%;
+  }
+}

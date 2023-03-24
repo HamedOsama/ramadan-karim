@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: content-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/photo9.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: rgb(0, 0, 0, 0.2);
+  border-bottom: 3px solid #fff;
+  z-index: 100;
+}
+
+header .logo img {
+  display: flex;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  border-radius: 40px;
+  height: 91px;
+  width: 100px;
+  z-index: 900;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  left: 32%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 5rem;
+  padding: 0.2rem 1rem;
+  z-index: 300;
+}
+
+.word span {
+  color: #10cab7;
+  padding-right: 5px;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.5);
+  border-left: 1px solid #fff;
+  width: 20vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+nav ul div {
+  margin: 40% 0;
+}
+
+nav ul li {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+li a:hover {
+  color: rgb(206, 167, 100);
+  font-size: 2.7rem;
+  transition: 0.7s ease;
+}
+
+#menu {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 88.5%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#menu span {
+  display: block;
+  width: 33px;
+  height: 5px;
+  background-color: white;
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.5s ease;
+  margin-bottom: 7px;
+}
+
+.is-active {
+  display: none;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button a,
+.button button {
+  transform: translate(-50%, -50%);
+  background: #10cab7;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .word {
+    font-size: 4rem;
+  }
+
+  nav ul div {
+    margin: 70% 0;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 2rem;
+  }
+
+  #menu {
+    top: 35%;
+    left: 88%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header .logo img {
+    top: 9%;
+    left: 3%;
+    height: 70px;
+    width: 80px;
+  }
+
+  .word {
+    font-size: 2.2rem;
+    left: 26%;
+  }
+
+  #menu {
+    left: 80%;
+  }
+
+  nav ul {
+    width: 33vw;
+  }
+
+  nav ul div {
+    margin: 60% 0;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  header .logo img {
+    top: 12%;
+    left: 3%;
+    height: 60px;
+    width: 70px;
+  }
+
+  .word {
+    font-size: 1.7rem;
+  }
+
+  #menu {
+    left: 80%;
+  }
+
+  nav ul {
+    width: 32vw;
+  }
+
+  nav ul div {
+    margin: 90% 0;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header .logo img {
+    top: 25%;
+    left: 1%;
+    height: 40px;
+    width: 50px;
+  }
+
+  .word {
+    font-size: 1.5rem;
+    left: 20%;
+  }
+
+  #menu {
+    left: 78%;
+  }
+
+  #menu span {
+    width: 25px;
+    height: 3px;
+  }
+
+  nav ul {
+    width: 37vw;
+  }
+
+  nav ul div {
+    margin: 70% 0;
+  }
+
+  nav ul li {
+    padding-top: 20px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+}
